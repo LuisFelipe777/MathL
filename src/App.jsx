@@ -1,9 +1,14 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 function App() {
 
   return (
-    <Header />
+    <div className="app">
+      <Header />
+      <div style={{ gridArea: "m" }}></div>
+      <Footer />
+    </div>
   )
 }
 

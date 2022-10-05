@@ -8,7 +8,6 @@ export default function Header() {
                     MathL
                 </h1>
             </div>
-
         </header>
     );
 }

@@ -8,5 +8,12 @@
 
 body {
   font-family: 'Arimo', sans-serif;
-  ;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 4rem 90vh 4rem;
+  grid-template-areas: "h"
+    "m"
+    "f";
 }

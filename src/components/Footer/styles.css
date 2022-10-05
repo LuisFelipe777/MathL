@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #291AFA;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+.footer {
+    width: 100%;
+    grid-area: f;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-blue);
+
+}
+
+.footer .descricao {
+    width: 80%;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.logos {
+    width: 20%;
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.logos a img {
+    width: 3rem;
+}
