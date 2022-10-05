@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #291AFA;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+.calculadora-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16rem;
+    height: 20rem;
+    border: 0.5rem solid var(--color-blue);
+    border-radius: 0.6rem;
+    padding: 2rem;
+}
+
+.calculadora-link img {
+    width: 10rem;
+}
+
+.calculadora-link h3 {
+    margin-top: 2rem;
+}
