@@ -6,8 +6,8 @@
 
 
 .header {
+    height: 5rem;
     width: 100%;
-    grid-area: h;
     display: flex;
     align-items: center;
     justify-content: center;

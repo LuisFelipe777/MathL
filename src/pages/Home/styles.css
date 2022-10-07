@@ -1,6 +1,11 @@
 .home-container {
-    grid-area: "m";
+    min-height: 90vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-container>Link {
+    margin: 1rem;
 }

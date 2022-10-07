@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Arimo:wght@500 & display=swap');
 
-:root {
-  -teste: blue;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +8,5 @@
 
 body {
   font-family: 'Arimo', sans-serif;
-}
 
-.app {
-  display: grid;
-  grid-template-rows: 4rem 90vh 4rem;
-  grid-template-areas: "h"
-    "m"
-    "f";
 }

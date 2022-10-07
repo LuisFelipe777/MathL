@@ -9,13 +9,12 @@
 }
 
 .footer {
-    width: 100%;
-    grid-area: f;
+    height: 5rem;
     display: flex;
     align-items: center;
     background-color: var(--color-blue);
-
 }
+
 
 .footer .descricao {
     width: 80%;
@@ -23,6 +22,7 @@
     display: flex;
     justify-content: center;
     color: var(--color-white);
+    font-size: 2vh;
 }
 
 .logos {
@@ -33,5 +33,28 @@
 }
 
 .logos a img {
-    width: 3rem;
+    max-width: 3rem;
+}
+
+@media(max-width:590px) {
+    .footer {
+        flex-direction: column;
+
+    }
+
+    .footer .descricao {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .logos {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media(max-width:400px) {
+    .footer .descricao {
+        font-size: 1.4vh;
+    }
 }

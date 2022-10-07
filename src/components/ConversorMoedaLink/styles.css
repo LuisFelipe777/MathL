@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 @keyframes card {
     from {
         transform: translateY(-5rem);
@@ -13,46 +12,46 @@
     }
 }
 
-
 :root {
     --color-blue: #291AFA;
     --color-white: #fff;
     --color-black: #000;
 }
 
-.calculadora-link {
+.conversor-moeda {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 18rem;
     height: 20rem;
     border: 0.5rem solid var(--color-blue);
     border-radius: 0.6rem;
     padding: 2rem;
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
-    animation: card 1.1s;
+    animation: card 1.3s;
     transition: all 300ms ease-in-out;
     cursor: pointer;
 }
 
-.calculadora-link:hover {
+.conversor-moeda:hover {
     transform: scale(1.05, 1.05);
 }
 
-.calculadora-link img {
-    width: 10rem;
+.conversor-moeda img {
+    max-width: 14rem;
 }
 
-.calculadora-link h3 {
+.conversor-moeda h3 {
     margin-top: 2rem;
 }
 
 @media (max-width:325px) {
-    .calculadora-link {
+    .conversor-moeda {
         width: 100%;
     }
 
-    .calculadora-link img {
+    .conversor-moeda img {
         width: 100%;
         height: 100%;
     }
