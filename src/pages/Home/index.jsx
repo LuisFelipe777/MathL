@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 export default function Home() {
     return (
         <div className="home-container">
-            <Link to="/calculadora" style={{ margin: "1rem", textDecoration: "none", color: "#000" }}>
+            <Link to="/calculadora" >
                 <CalculadoraLink />
             </Link>
-            <Link to="/conversor-de-moedas" style={{ margin: "1rem", textDecoration: "none", color: "#000" }}>
+            <Link to="/conversor-de-moedas">
                 <ConversorMoedaLink />
             </Link>
-            <Link to="/conversor-de-medidas" style={{ margin: "1rem", textDecoration: "none", color: "#000" }}>
+            <Link to="/conversor-de-medidas">
                 <ConversorMedidasLink />
             </Link>
 

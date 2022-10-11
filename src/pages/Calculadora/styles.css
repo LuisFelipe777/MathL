@@ -1,0 +1,95 @@
+:root {
+    --color-blue: #291AFA;
+    --color-blue-rgb: rgb(41, 26, 250);
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+.calculadora-container {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    width: 25rem;
+    height: 25rem;
+    border: 0.5rem solid var(--color-blue);
+    border-radius: 0.6rem;
+}
+
+.input-calculadora {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+.buttons {
+    background-color: aqua;
+    height: 21rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "a-1"
+        "a-2"
+        "a-3"
+        "a-4"
+        "a-5";
+}
+
+.primeira-fileira {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: a-1;
+}
+
+.segunda-fileira {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: a-2;
+}
+
+.terceira-fileira {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: a-3;
+}
+
+.quarta-fileira {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: a-4;
+}
+
+.quinta-fileira {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-area: a-5;
+}
+
+
+.buttons div>button {
+    height: 100%;
+    border: 1px solid var(--color-black);
+    background-color: var(--color-white);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.buttons div>button:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+@media(max-width:360px) {
+    .calculadora {
+        width: 90%;
+    }
+}
