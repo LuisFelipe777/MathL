@@ -1,5 +1,5 @@
 import "./styles.css";
-import imgSeta from "../../assets/imgs/icons8-flecha-80.png"
+import imgSeta from "../../assets/imgs/icons8-flecha-80.png";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -35,7 +35,7 @@ export default function ConversorDeMoedas() {
                     setConvertedCoin((objData[0].ask * valueInput).toFixed(2));
                     console.log(convertedCoin);
                 }).catch(error => {
-                    console.log(error)
+                    console.log(error);
                 });
         }
         convertCoins();
