@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import CalculadoraLink from "../../components/calculadoraLink";
+import CalculadoraLink from "../../components/CalculadoraLink";
 import ConversorMoedaLink from "../../components/ConversorMoedaLink";
 import { Link } from "react-router-dom";
 
