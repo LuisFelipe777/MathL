@@ -1,0 +1,81 @@
+:root {
+    --color-blue: #291AFA;
+    --color-blue-rgb: rgb(41, 26, 250);
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+.input-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.input-contain>.input-valor,
+.input-contain>.select-coin-one,
+.input-contain>.select-coin-two {
+    height: 2.3rem;
+    width: 10rem;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border: 0.2rem solid var(--color-blue);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.input-contain>.setImg {
+    width: 2.3rem;
+}
+
+.result-cotain {
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+}
+
+.result-cotain>.box-result {
+    border: 0.5rem solid var(--color-blue);
+    width: 35rem;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.box-result>.cod-coin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2rem;
+}
+
+.coin-result {
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.coin-result>span {
+    font-size: 4rem;
+}
+
+@media(max-width:465px) {
+    .input-contain {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem;
+    }
+
+    .result-cotain>.box-result {
+        width: 100%;
+    }
+
+    .coin-result>span {
+        font-size: 3rem;
+    }
+}
